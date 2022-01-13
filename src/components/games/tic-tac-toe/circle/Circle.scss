@@ -1,0 +1,7 @@
+@import '../animation.scss';
+
+.circle {
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    animation: draw 1s forwards;
+}

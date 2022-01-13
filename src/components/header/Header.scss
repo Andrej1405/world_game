@@ -1,0 +1,16 @@
+%display-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    min-height: 7vh;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+
+    @extend %display-flex;
+
+    &__game {
+        @extend %display-flex;
+    }
+}

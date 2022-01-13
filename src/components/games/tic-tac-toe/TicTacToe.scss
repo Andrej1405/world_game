@@ -1,0 +1,47 @@
+.tic-tac-toe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    font-size: 24px;
+
+    &__header {}
+
+    &__game-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__game {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 450px;
+        height: 450px;
+        outline: 3px solid black;
+
+        box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.75);
+
+        &_on {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        &_off {
+            background-color: rgba(0, 0, 0, 0.1);
+
+        }
+    }
+
+    &__btn-start {
+        width: 200px;
+    }
+
+    &__header,
+    &__game-header,
+    &__game,
+    &__btn-start {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,15 @@
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    transition: all 0.2s;
+
+    &_win {
+        background-color: rgba(100, 240, 250, 1);
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: inset 0px 0px 4.5px 0px rgba(0, 0, 0, 1);
+    }
+}

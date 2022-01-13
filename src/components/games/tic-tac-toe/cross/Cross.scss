@@ -1,0 +1,15 @@
+@import '../animation.scss';
+
+.cross {
+    .first-line {
+        stroke-dasharray: 142;
+        stroke-dashoffset: 142;
+        animation: draw 0.5s forwards;
+    }
+
+    .second-line {
+        stroke-dasharray: 142;
+        stroke-dashoffset: 142;
+        animation: draw 0.5s 0.5s forwards;
+    }
+}
