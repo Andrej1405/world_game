@@ -8,7 +8,7 @@
 
 **Interface game 'Tic-tac-toe':**
 
-!['Tic-tac-toe'](https://github.com/Andrej1405/world_game/tree/master/src/assests/images/board.png "Interface game 'Tic-tac-toe'")
+!['Tic-tac-toe'](https://github.com/Andrej1405/world_game/tree/master/src/assets/images/board.png "Interface game 'Tic-tac-toe'")
 
 ---
 
