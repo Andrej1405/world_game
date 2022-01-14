@@ -8,7 +8,7 @@ import store from './components/store/store'
 
 import './styles/reset.scss'
 import './styles/App.scss'
-//rafce
+
 function App() {
     return (
         <Provider store={store}>
