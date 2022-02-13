@@ -21,9 +21,7 @@ const Clock = () => {
     useEffect(() => {
         timerRef.current = setInterval(updateTime, 1000)
 
-        return () => {
-            clearInterval(timerRef.current)
-        }
+        return () => clearInterval(timerRef.current)
     }, [])
 
     const { hour, min, sec } = clock

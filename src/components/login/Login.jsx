@@ -1,43 +1,35 @@
 import React, { useState } from 'react'
-import { FormControl, Button, Input } from '@mui/material'
+import { useForm } from 'react-hook-form'
+
+import Input from '../UI/input/Input'
+import Button from '../UI/button/Button'
 
 import './Login.scss'
 
 const Login = () => {
     const [form, setForm] = useState({ login: '', email: '', password: '' })
-    console.log(form)
+    const { register, handleSubmit, reset, errors } = useForm({
+        mode: 'onBlur',
+    })
+
+    const onSubmit = data => {
+        reset()
+    }
 
     return (
         <div className="login">
-            <FormControl>
-                <Input
-                    id="login"
-                    label="1"
-                    variant="outlined"
-                    value={form.login}
-                    sr={{ mb: 10 }}
-                    required
-                    onChange={e => setForm({ ...form, login: e.target.value })}
-                />
-                <Input
-                    id="email"
-                    label="1"
-                    variant="outlined"
-                    sr={{ mb: 10 }}
-                    required
-                    onChange={e => setForm({ ...form, email: e.target.value })}
-                />
-                <Input
-                    id="password"
-                    label="1"
-                    variant="outlined"
-                    sr={{ mb: 10 }}
-                    required
-                    onChange={e => setForm({ ...form, password: e.target.value })}
-                />
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <Input {...register('login')} id="login" label="Логин" type="text" />
+                <Input {...register('firstName')} id="firstName" label="Имя" type="text" />
+                <Input {...register('email')} id="email" label="Почта" type="text" />
 
-                <Button variant="contained">Сохранить</Button>
-            </FormControl>
+                <Button variant="contained" type="reset">
+                    Отменить
+                </Button>
+                <Button variant="contained" type="submit" onClick={onSubmit}>
+                    Подтвердить
+                </Button>
+            </form>
         </div>
     )
 }

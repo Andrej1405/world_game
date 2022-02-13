@@ -9,5 +9,5 @@
     "trailingComma": "es5",
     "end-of-line": "lf",
     "bracketSpacing": true,
-    "bracketSameLine": true
+    "bracketSameLine": false
 }

@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Box } from '@mui/material'
 import { Routes, Route } from 'react-router-dom'
-import Login from '../login/Login'
-import { TicTacToe, Chess, Arkanoid } from '../games'
+
+import Loader from '../UI/loader/Loader'
+import routes from '../routes/routes'
 
 import './GameBoard.scss'
 
 const GameBoard = () => {
     return (
         <Box component="main" className="game-board">
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/tic-tac-toe" element={<TicTacToe />} />
-                <Route path="/chess" element={<Chess />} />
-                <Route path="/arkanoid" element={<Arkanoid />} />
-                <Route path="*" element={<Login />} />
-            </Routes>
+            <Suspense fallback={<Loader />}>
+                <Routes>
+                    {routes.map(route => (
+                        <Route key={route.path} path={route.path} element={route.element} />
+                    ))}
+                </Routes>
+            </Suspense>
         </Box>
     )
 }

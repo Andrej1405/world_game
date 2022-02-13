@@ -1,1 +1,21 @@
-.arkanoid {}
+$background: './assets/images/sky.jpg';
+
+.arkanoid {
+    width: 100vw;
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    canvas.back {
+        position: absolute;
+
+        background: url($background) center / cover no-repeat;
+        border-radius: 15px;
+
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 1);
+    }
+
+    canvas.front {}
+}

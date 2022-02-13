@@ -22,25 +22,27 @@ export const CELLS = {
     cell8: 'cell8',
 }
 
+const { cell0, cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8 } = CELLS
+
 export const winningCombination = [
-    [CELLS.cell0, CELLS.cell1, CELLS.cell2],
-    [CELLS.cell3, CELLS.cell4, CELLS.cell5],
-    [CELLS.cell6, CELLS.cell7, CELLS.cell8],
-    [CELLS.cell0, CELLS.cell3, CELLS.cell6],
-    [CELLS.cell1, CELLS.cell4, CELLS.cell7],
-    [CELLS.cell2, CELLS.cell5, CELLS.cell8],
-    [CELLS.cell0, CELLS.cell4, CELLS.cell8],
-    [CELLS.cell2, CELLS.cell4, CELLS.cell6],
+    [cell0, cell1, cell2],
+    [cell3, cell4, cell5],
+    [cell6, cell7, cell8],
+    [cell0, cell3, cell6],
+    [cell1, cell4, cell7],
+    [cell2, cell5, cell8],
+    [cell0, cell4, cell8],
+    [cell2, cell4, cell6],
 ]
 
 export const initialGameBoard = [
-    { id: CELLS.cell0, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell1, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell2, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell3, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell4, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell5, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell6, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell7, step: '', isFilled: false, isWinning: false, value: null },
-    { id: CELLS.cell8, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell0, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell1, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell2, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell3, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell4, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell5, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell6, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell7, step: '', isFilled: false, isWinning: false, value: null },
+    { id: cell8, step: '', isFilled: false, isWinning: false, value: null },
 ]

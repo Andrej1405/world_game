@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Footer.scss'
 const Footer = () => {
-    return <div className="footer">&copy; {new Date().getFullYear()}</div>
+    return <footer className="footer">&copy; {new Date().getFullYear()}</footer>
 }
 
 export default Footer

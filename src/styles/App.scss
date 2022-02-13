@@ -3,7 +3,7 @@
     src: url('./fonts/a_LCDNova/a_lcdnova_[allfont.ru].ttf') format('truetype');
 }
 
-.App {
+.app {
     display: flex;
     flex-direction: column;
 
@@ -14,8 +14,4 @@
     font-weight: 600;
 
     overflow: hidden;
-
-    a {
-        text-decoration: none;
-    }
 }
