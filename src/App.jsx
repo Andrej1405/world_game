@@ -11,16 +11,16 @@ import './styles/reset.scss'
 import './styles/App.scss'
 
 function App() {
-    return (
-        <Provider store={store}>
-            <div className="app">
-                <Header />
-                <GameBoard />
-                <Footer />
-                {false && <Loader />}
-            </div>
-        </Provider>
-    )
+  return (
+    <Provider store={store}>
+      <div className="app">
+        <Header />
+        <GameBoard />
+        <Footer />
+        {false && <Loader />}
+      </div>
+    </Provider>
+  )
 }
 
 export default App
